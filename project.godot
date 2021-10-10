@@ -20,7 +20,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Platformer"
+config/name="Buddy Up"
 run/main_scene="res://World.tscn"
 
 [display]
