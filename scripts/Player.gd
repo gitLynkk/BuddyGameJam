@@ -47,6 +47,10 @@ func processInput(delta):
 			motion.x = lerp(motion.x,0,AIR_RESISTANCE)
 
 func processAnimation():
+	if not isActive:
+			animationPlayer.play("Death")
+			return
+	
 	var x_input = 0
 	
 	if isActive:
