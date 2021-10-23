@@ -463,7 +463,7 @@ points = PoolVector2Array( 0, 0, 175, 0, 175, 175, 0, 175 )
 [node name="restart_input_object" parent="." instance=ExtResource( 8 )]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 69, 77 )
+position = Vector2( 20.1729, 181.95 )
 
 [node name="Aim" type="Node2D" parent="."]
 script = ExtResource( 4 )
