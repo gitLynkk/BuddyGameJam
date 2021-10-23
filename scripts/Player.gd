@@ -91,6 +91,7 @@ func look_right(looking_right: bool):
 	sprite.flip_h = looking_right
 
 func throwSeed():
+		animationPlayer.play("Throw")
 		var seedThrowing = plSeed.instance()
 		get_tree().current_scene.add_child(seedThrowing)
 		seedThrowing.global_position = throwBeginning.global_position
