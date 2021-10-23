@@ -1,5 +1,6 @@
 extends Area2D
 
 func _on_Spike_body_entered(body):
-	queue_free()
-	get_tree().reload_current_scene()
+	if body.name == "Player" or body.name == "Node2D":
+		queue_free()
+		get_tree().reload_current_scene()

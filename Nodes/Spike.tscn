@@ -7,6 +7,7 @@
 extents = Vector2( 5.56835, 4.53602 )
 
 [node name="Spike" type="Area2D"]
+collision_layer = 8
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true

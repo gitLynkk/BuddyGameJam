@@ -493,19 +493,19 @@ position = Vector2( 336.583, 68.9429 )
 scale = Vector2( 0.2, 0.2 )
 
 [node name="Spike" parent="." instance=ExtResource( 8 )]
-position = Vector2( 134.376, 150.251 )
+position = Vector2( 134.763, 150.179 )
 
 [node name="Spike2" parent="." instance=ExtResource( 8 )]
-position = Vector2( 149.734, 150.251 )
+position = Vector2( 149.701, 150.179 )
 
 [node name="Spike3" parent="." instance=ExtResource( 8 )]
-position = Vector2( 166.215, 181.715 )
+position = Vector2( 166.182, 181.643 )
 
 [node name="Spike4" parent="." instance=ExtResource( 8 )]
-position = Vector2( 181.948, 182.09 )
+position = Vector2( 181.915, 182.018 )
 
 [node name="Spike5" parent="." instance=ExtResource( 8 )]
-position = Vector2( 197.68, 183.059 )
+position = Vector2( 197.647, 182.987 )
 
 [node name="FadeIn" parent="." instance=ExtResource( 5 )]
 [connection signal="area_entered" from="Spike" to="Player" method="_on_Spike_area_entered"]
