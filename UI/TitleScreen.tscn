@@ -50,7 +50,7 @@ alignment = 1
 
 [node name="NewGameButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 2 )]
 margin_bottom = 120.0
-scene_to_load = "res://World.tscn"
+scene_to_load = "res://level_0.tscn"
 
 [node name="ContinueButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 3 )]
 margin_top = 124.0
@@ -73,5 +73,4 @@ valign = 2
 
 [node name="FadeIn" parent="." instance=ExtResource( 5 )]
 visible = false
-
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
