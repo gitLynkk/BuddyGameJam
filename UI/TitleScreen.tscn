@@ -38,34 +38,37 @@ stretch_mode = 4
 [node name="CenterRow" type="HBoxContainer" parent="Menu"]
 margin_top = 504.0
 margin_right = 1680.0
-margin_bottom = 872.0
+margin_bottom = 710.0
 size_flags_vertical = 3
 
 [node name="Buttons" type="VBoxContainer" parent="Menu/CenterRow"]
 margin_right = 1680.0
-margin_bottom = 368.0
+margin_bottom = 206.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
 
 [node name="NewGameButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 2 )]
-margin_bottom = 120.0
+margin_top = 43.0
+margin_bottom = 163.0
 scene_to_load = "res://level_0.tscn"
 
 [node name="ContinueButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 3 )]
+visible = false
 margin_top = 124.0
 margin_bottom = 244.0
 disabled = true
 
 [node name="OptionsButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
-margin_top = 248.0
-margin_bottom = 368.0
+visible = false
+margin_top = 124.0
+margin_bottom = 244.0
 disabled = true
 
 [node name="VersionLabel" type="Label" parent="Menu"]
-margin_top = 876.0
+margin_top = 714.0
 margin_right = 1680.0
-margin_bottom = 963.0
+margin_bottom = 920.0
 size_flags_vertical = 7
 custom_fonts/font = SubResource( 1 )
 text = "Version 1.0
@@ -75,4 +78,5 @@ valign = 2
 
 [node name="FadeIn" parent="." instance=ExtResource( 5 )]
 visible = false
+
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]

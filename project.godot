@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "PhysicsHelper",
 "language": "GDScript",
-"path": "res://scripts/PhysicsHelper.gd"
+"path": "res://Scripts/PhysicsHelper.gd"
 } ]
 _global_script_class_icons={
 "PhysicsHelper": ""

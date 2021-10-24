@@ -1,9 +1,8 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://Nodes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Nodes/Coin.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Art/target.png" type="Texture" id=3]
-[ext_resource path="res://scripts/aim.gd" type="Script" id=4]
+[ext_resource path="res://Nodes/Aim.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Transitions/FadeIn.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Art/ttt_tileset.png" type="Texture" id=6]
 [ext_resource path="res://Art/ttt_bg.png" type="Texture" id=7]
@@ -463,13 +462,6 @@ points = PoolVector2Array( 0, 0, 175, 0, 175, 175, 0, 175 )
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 19.611, 182.452 )
 
-[node name="Aim" type="Node2D" parent="."]
-script = ExtResource( 4 )
-
-[node name="Sprite" type="Sprite" parent="Aim"]
-z_index = 2
-texture = ExtResource( 3 )
-
 [node name="Big_LevelTileMap" type="TileMap" parent="."]
 scale = Vector2( 0.09, 0.09 )
 tile_set = SubResource( 48 )
@@ -496,3 +488,5 @@ final_level = true
 [node name="FadeIn" parent="." instance=ExtResource( 5 )]
 
 [node name="restart_input_object" parent="." instance=ExtResource( 8 )]
+
+[node name="Aim" parent="." instance=ExtResource( 3 )]
