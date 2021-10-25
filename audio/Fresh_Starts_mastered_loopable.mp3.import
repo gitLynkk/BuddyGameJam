@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Fresh_Starts_mastered_loopable.mp3-57f8887309a39091a6c349894c9fdbc0.mp3str"
+
+[deps]
+
+source_file="res://audio/Fresh_Starts_mastered_loopable.mp3"
+dest_files=[ "res://.import/Fresh_Starts_mastered_loopable.mp3-57f8887309a39091a6c349894c9fdbc0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

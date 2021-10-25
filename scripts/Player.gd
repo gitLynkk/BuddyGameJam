@@ -19,6 +19,7 @@ var isActive = true
 onready var sprite = $Sprite
 onready var animationPlayer = $AnimationPlayer 
 onready var throwBeginning = $ThrowBeginning
+onready var audioPlayer = $jumpAudio
 
 func processInput(delta):
 	var x_input = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
@@ -36,6 +37,7 @@ func processInput(delta):
 			motion.x  = lerp(motion.x,0,FRICTION)
 			
 		if Input.is_action_just_pressed("ui_up"):
+			audioPlayer.play()
 			motion.y = -JUMP_FORCE
 	else:
 		if Input.is_action_just_released("ui_up") and motion.y < -JUMP_FORCE/2:
